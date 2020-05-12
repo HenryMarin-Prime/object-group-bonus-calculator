@@ -41,3 +41,35 @@ const employees = [
 // Ask questions when you don't.
 
 console.log( employees );
+
+// - However, if their annual income is greater than $65,000, they should have their bonus adjusted down 1%.
+// - No bonus can be above 13% or below 0% total.
+function bonusCalculator(addBonus){
+  let addBonus = 0;
+for(let i = 0; i<employees.length; i++)
+    if (employees[i].annualSalary >= 65000){
+      addBonus =( totalCompesation* .01);
+    }
+    
+    else if (employee[i].reviewRating <= 2){
+      addBonus =( totalCompesation* .0);
+    }
+  
+    else if (employee[i].reviewRating  === 3){
+      addBonus =( (totalCompesation * .04) + totalCompesation );
+    
+    }
+  
+      else if (employee[i].reviewRating  === 4){
+        addBonus =( (totalCompesation * .06) + totalCompesation );
+      
+      }
+  
+   else if (employee[i].reviewRating  === 5){
+      addBonus =( (totalCompesation * .1) + totalCompesation );
+    
+    }
+
+    return addBonus;
+  }
+
